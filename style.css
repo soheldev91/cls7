@@ -1,0 +1,509 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background: linear-gradient(#000000b5,#000000f0),url(img/webMainImg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+/* ***********home_sic style START************* */
+#header{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    width: 298px;
+}
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background:#081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 0.3s;
+}
+.navebar a {
+    font-size: 18px;
+    color: #ededed;
+    font-weight: 500;
+    text-decoration:none;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+nav.navebar a:last-child {
+    background: #049cd5;
+    padding: 10px;
+    border-radius: 25px;
+}
+.navebar a::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background:#081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 0.5s;
+}
+.navebar a:hover{
+       color: #00abf0;
+       border: 2px solid;
+       padding: 10px;
+       border-radius: 20px;
+}
+#home{
+    height: 100vh;
+    /* background: url(img/homeImage.jpg)no-repeat; */
+    background-size: 30%;
+    background-position:center;
+    display: flex;
+    align-items: center;
+    padding-top: 15rem;
+}
+.home-content{margin: auto;text-align: center;}
+.home-content h1{
+    width: 680px;
+    font-size: 30px;
+    font-weight: 700;
+    color:#fff;
+    padding-bottom: 17px;
+    letter-spacing: 0.5rem;
+    margin-bottom: 15px;
+}
+.home-content h1::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background:#081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+.home-content h3 {
+    font-size: 68px;
+    font-weight: 700;
+    color:#00abf0;
+}
+.home-content h3::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background:#081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.2s;
+}
+
+/* ***********home_sic style END************* */
+
+
+/* ***********ALL BUTTON style START************* */
+.button{
+    position: relative;
+    border: 3px solid #00abf0;
+    width: 110px;
+    padding: 10px 15px;
+    color: #00abf0;
+    border-radius: 6px;
+    font-weight: 700;
+    float: left;
+    transition: 0.3s;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.button::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background:#081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.9s;
+    z-index: 2;
+}
+.button::before{
+    content:'';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: 0.3s;
+}
+.button:hover::before{
+    width: 100%;
+}
+/* ***********ALL BUTTON style END************* */
+
+/* ***********s_s_mInvest section START ***********/
+section.s_s_mInvest {
+    background: #e7ddddd1;
+    overflow: hidden;
+}
+
+.section_title {
+    text-align: center;
+    color: #454945;
+}
+.section_title h1 {
+    font-size: 29px;
+    letter-spacing: 0.1rem;
+    padding: 0px 0px 21px;
+}
+.section_title h3 {
+    font-size: 14px;
+    margin-bottom: 33px;
+}
+.card_Box {
+    width: 478px;
+    float: left;
+    margin-left: 65px;
+    margin-top: 40px;
+    background: #fff3f3;
+    padding: 31px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.card_Box .card .card_number {
+    font-size: 20px;
+    color: #049cd5;
+    font-weight: 700;
+}
+.card h3 {
+    margin: 15px 0px;
+    font-size: 21px;
+    color: #393939;
+}
+.card h4 {
+    color: #393939bb;
+    width: 410px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.card_Box:hover {
+    box-shadow: 10px 9px 7px 3px #2daadb;
+}
+/* ***********s_s_mInvest section END ***********/
+
+
+/* ************ABOUT  SECTION START*********** */
+section.About_section {
+    background: #c2bfbfe6;
+    overflow: hidden;
+}
+.about {
+    width: 45%;
+    float: left;
+    margin-left: 54px;
+}
+.about.left {
+    margin-left: 60px;
+}
+.about_title h1 {
+    font-size: 41px;
+}
+.about_title p {
+    font-size: 15px;
+    padding: 24px 0px;
+    width: 478px;
+}
+.about_left_img {
+    width: 491px;
+}
+section.About_section {
+    background: #c2bfbfe6;
+    overflow: hidden;
+    padding: 130px;
+}
+.about {
+    width: 43%;
+    float: left;
+    margin-left: 54px;
+}
+.about.left {
+    margin-left: 60px;
+}
+.about_title h1 {
+    font-size: 41px;
+    color: #2d2d2d;
+}
+.about_title p {
+    font-size: 15px;
+    padding: 24px 0px;
+    width: 478px;
+    color: #2d2d2d;
+}
+.about_left_img {
+    width: 491px;
+}
+img.about_right_img {
+    width: 43%;
+    margin-bottom: 30px;
+}
+img.about_right_img:first-child {
+    margin-right: 30px;
+}
+.about_right_title p {
+    font-size: 15px;
+    color: #2d2d2d;
+}
+.about_right_title h2 {
+    color: #2d2d2d;
+    padding: 12px 0px;
+    font-size: 19px;
+}
+/* ABOUT  SECTION END */
+
+
+/* OUR HESTORY SECTION START  */
+section.our_hestory {
+    background: #c7c7c7;
+    overflow: hidden;
+}
+.card_number {
+    text-align: center;
+    font-size: 64px;
+    color: #2d2d2d;
+    margin-top: -77px;
+    margin-bottom: 82px;
+}
+.hestory_box {
+    width: 348px;
+    float: left;
+    margin-left: 157px;
+    margin-bottom: 42px;
+    background: #049cd5;
+    padding: 28px 31px 56px;
+    border-radius: 12px;
+    color: #fff;
+    transition: 0.3s;
+}
+.hestory_box p {
+    color: #e2e0e2;
+    width: 307px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+a.hestory_button {
+    text-decoration: none;
+    font-size: 15px;
+    color: #049cd5;
+    margin-left: 11px;
+    transition: 0.4s;
+}
+.hestory_box:hover{
+    background: #005779;
+}
+.hestory_box:hover .hestory_button {
+    color: #e2e0e2;
+}
+/* OUR HESTORY SECTION END  */
+
+
+/* MEET OUR TEAM SECTION SETAT */
+section.our_team {
+    background: #cecece;
+    overflow: hidden;
+}
+.team_title {
+    font-size: 41px;
+    margin-block-end: 4rem;
+    color: #2d2d2d;
+    margin-left: 105px;
+}
+.single_parson {
+    width: 37%;
+    margin-left: 114px;
+    float: left;
+    margin-bottom: 76px;
+    border-bottom: 2px solid #fff;
+}
+.single_parson p {
+    padding-top: 19px;
+    margin-top: -6px;
+    color: #6d6a6a;
+    padding-bottom: 14px;
+}
+.single_parson ._parson_work_at {
+    padding: 17px 0px;
+    font-size: 20px;
+    color: #6d6a6a;
+}
+.single_parson .parson_email {
+    color: #049cd5;
+    font-size: 20px;
+}
+/* MEET OUR TEAM SECTION END */
+
+
+/* Your Message SECTION START */
+.message_title {
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 58px;
+}
+section.your_message {
+    width: 74%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 300px;
+}
+input {
+    width: 330px;
+    margin-right: 44px;
+    padding: 6px 10px;
+    background: none;
+    border-style: none;
+    font-size: 17px;
+    color: #fff;
+    border-bottom: 2px solid #049cd5;
+    margin-bottom: 70px;
+}
+input.subject {
+    width: 710px;
+}
+textarea#message {
+    width: 717px;
+    height: 45px;
+    font-size: 17px;
+    padding: 11px;
+    border: 2px solid #049cd5;
+    background: none;
+    border-radius: 20px;
+}
+button#message_send {
+    float: left;
+    width: 99px;
+    padding: 11px;
+    margin-top: 27px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    background: #049cd5;
+    border-radius: 30px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+button#message_send:hover{
+    background: #024d6b;
+}
+/* Your Message SECTION END */
+
+section.maps_our_office {
+    background: #a1a1a1;
+}
+.offic_Maps {
+    width: 600px;
+    float: left;
+    margin-right: 65px;
+    margin-top: -320px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.offic_time {
+    width: 342px;
+    float: left;
+    margin-top: -247px;
+    background: #b3b3b3;
+    padding: 35px;
+    border-radius: 14px;
+}
+.offic_time h1 {
+    font-size: 29px;
+    color: #3a3a3a;
+    margin-bottom: 21px;
+}
+.offic_time h3 {
+    margin-bottom: 16px;
+    color: #393636;
+}
+.offic_time h5 {
+    color: #393636;
+    margin-bottom: 8px;
+}
+h5.address {
+    margin-bottom: 52px;
+}
+
+
+/* MORE ABOUT SECTION START */
+section.more_about {
+    background: #fff;
+    overflow: hidden;
+}
+.moer_about_header {
+    text-align: center;
+    margin-bottom: 90px;
+}
+.moer_about_header h1 {
+    font-size: 44px;
+    color: #444343;
+}
+.moer_about_header h4 {
+    font-size: 15px;
+    color: #444343;
+    margin-top: 11px;
+}
+
+.mor_about {
+    width: 40%;
+    float: left;
+    margin-left: 83px;
+}
+.moer_about_title h2 {
+    padding: 19px 0px;
+    color: #7a7a7a;
+}
+.moer_about_title p {
+    font-size: 13px;
+    color: #787676;
+}
+.moer_about_title p {
+    margin-bottom: 38px;
+}
+/* MORE ABOUT SECTION END */
+footer#copy_right_section {
+    width: 100%;
+    background: #e9e9e9;
+    padding: 24px;
+    font-size: 10px;
+    text-align: center;
+}
+/* KEYFRAMES ANIMATION */
+@keyframes showRight{
+    100%{
+        width: 0px;
+    }
+}
